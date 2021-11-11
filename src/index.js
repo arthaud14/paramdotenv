@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+require("dotenv").config();
+console.log(
+  `I am ${process.env.NAME}, wilder in ${process.env.CITY}, and I love ${process.env.LANGUAGE}`
+);
 
 ReactDOM.render(
   <React.StrictMode>
